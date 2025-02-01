@@ -1,0 +1,161 @@
+/* General Styling */
+.locations {
+    padding: 50px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  /* Rating Section */
+  .location {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .ratings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .ratings h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #51358c;
+  }
+  
+  .ratings p {
+    font-size: 20px;
+    color: #555;
+  }
+  
+  .ratings h4 {
+    font-size: 22px;
+    color: #ffcc00;
+  }
+  
+  /* Horizontal Line */
+  .line-break {
+    width: 60%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+  }
+  
+  /* Testimonials Section */
+  .rating {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  #rate {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  #rate:hover {
+    transform: scale(1.05);
+  }
+  
+  #rate h1 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  #rate h4 {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  /* Address Section */
+  .address {
+    background-color: #51358c;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    border-radius: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .address-img {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .address-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .address-text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .address-text h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .address-text h4 {
+    font-size: 18px;
+    color: #ffcc00;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .rating {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #rate {
+      width: 80%;
+    }
+  
+    .address {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .address-text {
+      padding: 30px 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .ratings h1 {
+      font-size: 36px;
+    }
+  
+    .ratings p {
+      font-size: 18px;
+    }
+  
+    .ratings h4 {
+      font-size: 20px;
+    }
+  
+    #rate {
+      width: 100%;
+    }
+  
+    .address {
+      padding: 30px;
+    }
+  }
+  

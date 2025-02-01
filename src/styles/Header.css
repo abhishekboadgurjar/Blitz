@@ -1,0 +1,71 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: #17181c;
+  width: 100%; /* Ensure full width */
+  padding: 10px 20px; /* Optional padding for spacing */
+  z-index: 100; /* Ensures it stays on top of other content */
+}
+
+.name {
+  font-size: 18px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 10px;
+  font-size: 20px;
+}
+
+li a:hover {
+  color: black;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.book {
+  background-color: #6139b3;
+  color: white;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%; /* Ensure the navigation takes full width on smaller screens */
+    margin-top: 10px;
+  }
+
+  .name {
+    margin-bottom: 10px;
+  }
+}

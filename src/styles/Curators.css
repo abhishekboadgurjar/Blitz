@@ -1,0 +1,135 @@
+/* General Styling */
+.curators {
+    background-color: #6139b3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 100px 20px;
+    color: white;
+    border-radius: 8px;
+  }
+  
+  .left-curators {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .left-curators h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .left-curators p {
+    font-size: 22px;
+    color: #f1f1f1;
+    line-height: 1.6;
+  }
+  
+  .right-curators {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  /* Card Styling */
+  .card1, .card2, .card3 {
+    background-color: #fff;
+    color: #333;
+    padding: 30px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card1 h1, .card2 h1, .card3 h1 {
+    font-size: 24px;
+    color: #6139b3;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .card1 p, .card2 p, .card3 p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Hover effect for the cards */
+  .card1:hover, .card2:hover, .card3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1024px) {
+    .curators {
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 20px;
+    }
+  
+    .left-curators {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  
+    .left-curators h1 {
+      font-size: 48px;
+    }
+  
+    .right-curators {
+      width: 100%;
+    }
+  
+    .cards {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+  
+    .card1, .card2, .card3 {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .curators {
+      padding: 60px 15px;
+    }
+  
+    .left-curators h1 {
+      font-size: 40px;
+    }
+  
+    .left-curators p {
+      font-size: 18px;
+    }
+  
+    .card1, .card2, .card3 {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .card1 h1, .card2 h1, .card3 h1 {
+      font-size: 22px;
+    }
+  
+    .card1 p, .card2 p, .card3 p {
+      font-size: 16px;
+    }
+  }
+  

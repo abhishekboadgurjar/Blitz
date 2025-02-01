@@ -1,0 +1,138 @@
+.contact {
+    background-color: #51358c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    gap: 50px;
+    flex-wrap: wrap;
+    color: white;
+  }
+  
+  .left-contact {
+    max-width: 350px;
+    text-align: left;
+  }
+  
+  .left-contact h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .left-contact p {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  
+  .right-contact {
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .registration-card {
+    background: linear-gradient(135deg, #6239b5, #7b52c1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .input-field {
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #2d1b5b;
+    color: white;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .input-field::placeholder {
+    color: #bdbdbd;
+  }
+  
+  .input-field:focus {
+    background-color: #3c236d;
+    border: 1px solid #fff;
+  }
+  
+  .register-btn {
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .register-btn:hover {
+    background-color: #e68900;
+    transform: scale(1.05);
+  }
+  
+  .terms {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .terms a {
+    color: #ffcc80;
+    text-decoration: none;
+  }
+  
+  .terms a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact {
+      flex-direction: column;
+      padding: 40px;
+    }
+  
+    .left-contact {
+      text-align: center;
+    }
+  
+    .registration-card {
+      width: 100%;
+    }
+  }
+  
+  .submission-message {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: #2d1b5b;
+    border-radius: 8px;
+  }
+  
+  .submission-message h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .submission-message p {
+    font-size: 16px;
+  }
+  

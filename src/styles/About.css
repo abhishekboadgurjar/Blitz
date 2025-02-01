@@ -1,0 +1,159 @@
+/* General Styling */
+.about {
+    width: 100%;
+    padding: 100px 20px;
+    
+  }
+  
+  .about h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .benifits {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .benifits div {
+    text-align: center;
+    max-width: 250px;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .benifits div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .benifits div img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+  
+  .benifits div h4 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  /* Sign-up Section */
+  .sign-sec {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    background-color: #6139b3;
+    color: white;
+    border-radius: 8px;
+  }
+  
+  .sign-sec h1 {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .sign-sec p {
+    font-size: 20px;
+    color: #f1f1f1;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .sign-sec button {
+    font-size: 22px;
+    padding: 20px;
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #f1f1f1;
+    color: #6139b3;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .sign-sec button:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-5px);
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1024px) {
+    .about {
+      padding: 80px 20px;
+    }
+  
+    .about h1 {
+      font-size: 40px;
+    }
+  
+    .benifits {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .benifits div {
+      max-width: 300px;
+    }
+  
+    .sign-sec h1 {
+      font-size: 45px;
+    }
+  
+    .sign-sec p {
+      font-size: 18px;
+    }
+  
+    .sign-sec button {
+      width: 220px;
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about {
+      padding: 60px 20px;
+    }
+  
+    .about h1 {
+      font-size: 35px;
+    }
+  
+    .benifits {
+      gap: 20px;
+    }
+  
+    .benifits div {
+      width: 90%;
+      max-width: none;
+    }
+  
+    .sign-sec h1 {
+      font-size: 40px;
+    }
+  
+    .sign-sec p {
+      font-size: 16px;
+    }
+  
+    .sign-sec button {
+      width: 200px;
+      font-size: 18px;
+      padding: 18px;
+    }
+  }
+  
